@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <tittle>JS Variable</tittle>
+</head>
+    <body>
+ 
+		<div id="penjumlahan"></div>				
+ 
+		<script>
+			let a = 10;
+            let b = "saya belajar javascript";
+			let c = 20;
+ 
+			let penjumlahan = c + a;			
+ 
+			document.getElementById("penjumlahan").innerHTML = penjumlahan;			
+		</script>
+    </body>
+</html>
