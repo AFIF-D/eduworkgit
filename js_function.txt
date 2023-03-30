@@ -1,1 +1,11 @@
-myFunction()
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+function myFunction() {
+        alert("Hello world!");
+}
+myFunction();
+    </script>
+</body>
+</html>
