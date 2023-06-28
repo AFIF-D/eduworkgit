@@ -1,0 +1,37 @@
+/// <reference types="cypress" />
+
+import "../cypress/support/commands"
+
+describe('Working with inputs', () => {
+    it('Visit the website', () => {
+      cy.visit('http://zero.webappsecurity.com/login.html')
+      cy.url().should('include', 'login.html')
+    });
+   // it('Should fill username', () => {
+   //   cy.get('#user_login').clear()
+   //   cy.get('#user_login').type('username')
+   // });
+   // it('should fill password', () => {
+   //  cy.get('input[name="user_password"]').clear()
+   //  cy.get('input[name="user_password"]').type('password')
+   //  });
+    it('should try to login' , () => {
+      //   cy.fixture('example').then(example =>{
+      //       const username = example.username
+      //       const password = example.password
+      // cy.login(username,password)
+      cy.get('#user_login').type('username')
+      cy.get('input[name="user_password"]').type('password')
+      cy.get('#user_remember_me').type('click')
+      cy.get('[value="Sign in"]').click()
+    
+     // cy.pay_bills('5','2023-06-01');
+
+
+    });
+    it('fill paymentsbills'  , () => {
+
+      cy.pay_bills('5','2023-06-01');
+    })
+
+})
